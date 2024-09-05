@@ -1,6 +1,6 @@
 Best Burger - fiktives Burger Restaurant
 
-Burgerrestaurant One-Pager mit Tischreservierung, Erfolgs- bzw. Fehlermeldungen und Darkmode via Media Query(prefers-color-scheme: dark). Technologien: HTML, CSS, JavaScript, PHP, SQL
+Burgerrestaurant One-Pager mit Tischreservierung, Erfolgs- bzw. Fehlermeldungen und Darkmode via Media Query(prefers-color-scheme: dark). Voll responsiv. Technologien: HTML, CSS, JavaScript, PHP, SQL
 
 Installation
 
