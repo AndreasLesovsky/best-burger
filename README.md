@@ -4,7 +4,9 @@ Burgerrestaurant One-Pager mit Tischreservierung, Erfolgs- bzw. Fehlermeldungen 
 
 Installation
 
-Am besten einfach über xampp oder einen anderen Webserver der PHP und SQL unterstützt hosten. Schritte, um das Projekt lokal zu installieren:
+Am besten einfach über xampp oder einen anderen Webserver der PHP und SQL unterstützt hosten. Man muss die Datenbank db_reservations erstellen, dazu unter xammpp "https://localhost/phpmyadmin" öffnen und das SQL Statement in der datei   "best-burger/db_reservations/db_reservations.sql" ausführen.
+
+Schritte, um das Projekt lokal zu installieren:
 
 Repository klonen: git clone https://github.com/andreaslesovsky/best-burger.git
 
