@@ -1,0 +1,988 @@
+/* ---- Allgemein ---- */
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: var(--font-std);
+	font-size: 1.1rem;
+	color: var(--col-font);
+	background-color: var(--col-bg);
+}
+
+section {
+	padding-block: 3rem;
+}
+
+.wrapper-inner {
+	max-width: 80rem;
+	margin: auto;
+}
+
+h2 {
+	font-family: var(--font-headlines);
+	color: var(--col-main);
+	text-transform: uppercase;
+	margin: 1rem;
+	font-size: 3rem;
+	font-weight: bold;
+}
+
+.link-btn {
+	font-size: 1.25rem;
+	color: var(--col-font);
+	font-weight: bold;
+	text-decoration: none;
+	text-wrap: nowrap;
+	background-color: var(--col-bg);
+	border: 2px solid var(--col-main);
+	padding: 0.5rem 2rem;
+	border-radius: 0.25rem;
+	cursor: pointer;
+	transition: background-color ease 0.5s;
+}
+
+.link-btn:hover {
+	background-color: var(--col-main);
+	box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+}
+
+#ueber-uns,
+#burgers,
+#wings,
+#reserve {
+	scroll-margin-top: 1rem;
+}
+
+/* ---- ENDE Allgemein ---- */
+
+/* ---- Header ---- */
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: var(--col-bg);
+	padding-inline: 2rem;
+	width: 100%;
+	height: 6rem;
+	position: absolute;
+	z-index: 999;
+	left: 0;
+	top: 0;
+	transition: transform 0.3s ease;
+}
+
+header.small {
+	height: 5rem;
+	background-color: var(--col-main);
+	position: fixed;
+	z-index: 999;
+}
+
+header.small nav a {
+	color: var(--col-font-inverted);
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+header.small nav a:hover {
+	color: var(--col-font);
+}
+
+header.small nav li {
+	border-right: 2px solid red;
+}
+
+header.small nav li:last-of-type {
+	border-right: none;
+}
+
+header.small ul.social a {
+	font-size: 1.75rem;
+	padding: 0.5rem;
+	color: var(--col-font-inverted);
+}
+
+header.small ul.social a:hover {
+	color: var(--col-font);
+}
+
+header.small #menu-btn svg {
+	fill: var(--col-font-inverted);
+}
+
+header.small #menu-btn:hover svg {
+	fill: var(--col-font);
+}
+
+header.small a.logo {
+	color: var(--col-font-inverted);
+}
+
+a.logo {
+	text-align: center;
+	color: var(--col-main);
+	text-wrap: nowrap;
+	margin-top: 1rem;
+}
+
+a.logo h1 {
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+a.logo small {
+	font-size: 0.75rem;
+	font-weight: normal;
+	bottom: 1rem;
+}
+
+nav ul {
+	text-wrap: nowrap;
+	display: flex;
+}
+
+nav li {
+	border-right: 2px solid var(--col-main);
+	padding: 0 1rem;
+}
+
+nav li:last-of-type {
+	border-right: none;
+}
+
+nav a {
+	font-size: 1.15rem;
+	font-weight: bold;
+	padding: 0.5rem 1rem;
+	color: var(--col-font);
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: color ease .5s;
+}
+
+nav a:hover {
+	color: var(--col-main);
+}
+
+nav ul li:nth-of-type(1) {
+	padding-left: 0;
+}
+
+nav ul li:nth-of-type(1) a {
+	padding-left: 0;
+}
+
+nav ul li:nth-of-type(4) {
+	padding-right: 0;
+}
+
+nav ul li:nth-of-type(4) a {
+	padding-right: 0;
+}
+
+ul.social {
+	display: flex;
+	gap: 0.5rem;
+}
+
+ul.social a {
+	font-size: 1.75rem;
+	padding: 0.5rem;
+	color: var(--col-font);
+}
+
+ul.social a:hover {
+	color: var(--col-main);
+}
+
+#menu-btn {
+	display: none;
+	background: none;
+	border: none;
+	width: 2rem;
+	height: 2rem;
+	cursor: pointer;
+}
+
+#menu-btn svg {
+	width: 2rem;
+	height: 2rem;
+	fill: var(--col-font);
+	transition: fill ease .5s;
+}
+
+#menu-btn:hover svg {
+	fill: var(--col-main);
+}
+
+/* ---- ENDE Header ---- */
+
+/* ---- Hero Section ---- */
+main section:first-of-type {
+	background-color: var(--col-section);
+	padding-top: 6rem;
+	padding-bottom: 0;
+}
+
+main section:first-of-type div.wrapper-inner {
+	text-wrap: balance;
+	display: grid;
+	grid-template-columns: 40% 1fr;
+	grid-template-rows: max-content;
+	background-image: url(../media/burger-bg.png);
+	background-size: auto 40rem;
+	background-position: 100%;
+	background-repeat: no-repeat;
+}
+
+main section:first-of-type div.wrapper-inner h2 {
+	font-size: 2.75rem;
+	margin: 0;
+}
+
+main section:first-of-type div.wrapper-inner p {
+	font-size: 1.12rem;
+	font-weight: bold;
+	margin-block: 1rem;
+
+}
+
+main section:first-of-type>div.wrapper-inner>div.content>.link-btn {
+	top: 1rem;
+}
+
+.content {
+	padding: 1rem 0 3rem 2rem;
+}
+
+div.sticky-header-bar {
+	position: sticky;
+	left: 0;
+	top: 0;
+	z-index: 400;
+	height: 8px;
+	background-color: var(--col-main);
+}
+
+/* ---- ENDE Hero Section ---- */
+
+/* Section Über Uns */
+section#ueber-uns div.wrapper-inner div {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: max-content;
+}
+
+section#ueber-uns div.wrapper-inner div p {
+	padding: 1rem;
+}
+
+section#ueber-uns div.wrapper-inner div picture {
+	max-width: 25rem;
+	justify-self: end;
+	align-self: center;
+	padding: 1rem;
+}
+
+section#ueber-uns {
+	background-color: var(--col-section);
+	border-top: 1px solid var(--col-font);
+	border-bottom: 1px solid var(--col-font);
+}
+
+/* ENDE Section Über Uns */
+
+/* Section All Stars */
+section#all-stars div.wrapper-inner>div {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: max-content;
+	gap: 2rem;
+}
+
+section#all-stars div.wrapper-inner>div div {
+	text-align: start;
+	padding: 1rem;
+}
+
+section#all-stars div.wrapper-inner>div div>* {
+	margin-block: 0.5rem;
+}
+
+section#all-stars div.wrapper-inner>div div h4 {
+	font-size: 2rem;
+}
+
+section#all-stars div.wrapper-inner>div div img {
+	border-bottom: 5px solid var(--col-section);
+}
+
+section#all-stars div.wrapper-inner {
+	text-align: center;
+}
+
+section#all-stars div.wrapper-inner div div img {
+	max-height: 15rem;
+	width: auto;
+}
+
+section#all-stars div.wrapper-inner h2 {
+	text-align: start;
+}
+
+/* ---- ENDE All Stars Section ---- */
+
+/* ---- Wings Section ---- */
+section:nth-of-type(5) {
+	background-image: url(../media/wings_fire_inverted.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: var(--col-section);
+	border-top: 1px solid var(--col-font);
+	border-bottom: 1px solid var(--col-font);
+}
+
+section#wings div.wrapper-inner:first-of-type {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: max-content;
+	grid-template-areas:
+		"wings wings sauces1 sauces2 rubs";
+}
+
+section#wings div.wrapper-inner:first-of-type>div:nth-of-type(2),
+section#wings div.wrapper-inner:first-of-type>div:nth-of-type(3),
+section#wings div.wrapper-inner:first-of-type>div:nth-of-type(4) {
+	padding: 1rem;
+}
+
+section#wings div.wrapper-inner:first-of-type>div:nth-of-type(2),
+section#wings div.wrapper-inner:first-of-type>div:nth-of-type(4) {
+	padding-top: 1.5rem;
+}
+
+section#wings div.wrapper-inner:first-of-type ul {
+	padding-top: 1.75rem;
+}
+
+section#wings div.wrapper-inner:first-of-type ul li:hover {
+	cursor: pointer;
+	color: var(--col-main);
+}
+
+section#wings div.wrapper-inner:first-of-type>div:nth-of-type(1) {
+	grid-area: wings;
+	padding-right: 10rem;
+}
+
+section#wings div.wrapper-inner:first-of-type>div:nth-of-type(2) {
+	grid-area: sauces1;
+}
+
+section#wings div.wrapper-inner:first-of-type>div:nth-of-type(3) {
+	grid-area: sauces2;
+	padding-top: 3.85rem;
+}
+
+section#wings div.wrapper-inner:first-of-type>div:nth-of-type(4) {
+	grid-area: rubs;
+}
+
+section#wings div.wrapper-inner:first-of-type>div:nth-of-type(1) p {
+	margin: 1rem;
+}
+
+section#wings div.wrapper-inner:first-of-type h3 {
+	font-size: 2rem;
+}
+
+/* ---- ENDE Wings Section ---- */
+
+/* ---- Heatmeter ---- */
+#heatmeter-holder {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: start;
+	gap: 0.25rem;
+}
+
+div#heatmeter {
+	padding: 1rem;
+}
+
+div#heatmeter h2 {
+	margin-inline: 0;
+}
+
+div#heatmeter h2 span {
+	font-size: 1.25rem;
+	color: var(--col-font);
+	font-family: var(--font-std);
+	font-weight: normal;
+	text-transform: initial;
+}
+
+.slide {
+	flex: 1 1 auto;
+	height: 15rem;
+	cursor: pointer;
+}
+
+.slide p {
+	display: none;
+	color: #333;
+	font-size: 2.5rem;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.slide span {
+	display: none;
+	color: #333;
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+.slide.open {
+	width: 30rem;
+}
+
+.slide.open p {
+	display: block;
+	padding: 1rem;
+}
+
+.slide.open span {
+	display: block;
+	padding: 1rem;
+	padding-top: 0;
+}
+
+.slide:nth-of-type(1) {
+	background-color: #FF0000;
+}
+
+.slide:nth-of-type(2) {
+	background-color: #FF0D00;
+}
+
+.slide:nth-of-type(3) {
+	background-color: #FF1A00;
+}
+
+.slide:nth-of-type(4) {
+	background-color: #FF2700;
+}
+
+.slide:nth-of-type(5) {
+	background-color: #FF3400;
+}
+
+.slide:nth-of-type(6) {
+	background-color: #FF4100;
+}
+
+.slide:nth-of-type(7) {
+	background-color: #FF4E00;
+}
+
+.slide:nth-of-type(8) {
+	background-color: #FF5B00;
+}
+
+.slide:nth-of-type(9) {
+	background-color: #FF6800;
+}
+
+.slide:nth-of-type(10) {
+	background-color: #FF7500;
+}
+
+.slide:nth-of-type(11) {
+	background-color: #FF8200;
+}
+
+.slide:nth-of-type(12) {
+	background-color: #FF8F00;
+}
+
+.slide:nth-of-type(13) {
+	background-color: #FF9C00;
+}
+
+.slide:nth-of-type(14) {
+	background-color: #FFA900;
+}
+
+.slide:nth-of-type(15) {
+	background-color: #FFB600;
+}
+
+.slide:nth-of-type(16) {
+	background-color: #FFC300;
+}
+
+.slide:nth-of-type(17) {
+	background-color: #FFD000;
+}
+
+.slide:nth-of-type(18) {
+	background-color: #FFDD00;
+}
+
+.slide:nth-of-type(19) {
+	background-color: #FFEA00;
+}
+
+.slide:nth-of-type(20) {
+	background-color: #FFF700;
+}
+
+.slide:nth-of-type(21) {
+	background-color: #FFFF00;
+}
+
+.slide:nth-of-type(22) {
+	background-color: #F7FF00;
+}
+
+.slide:nth-of-type(23) {
+	background-color: #EAFF00;
+}
+
+.slide:nth-of-type(24) {
+	background-color: #DDFF00;
+}
+
+.slide:nth-of-type(25) {
+	background-color: #D0FF00;
+}
+
+.slide:nth-of-type(26) {
+	background-color: #C3FF00;
+}
+
+.slide:nth-of-type(27) {
+	background-color: #B6FF00;
+}
+
+.slide:nth-of-type(28) {
+	background-color: #A9FF00;
+}
+
+.slide:nth-of-type(29) {
+	background-color: #9CFF00;
+}
+
+.slide:nth-of-type(30) {
+	background-color: #8FFF00;
+}
+
+.slide:nth-of-type(31) {
+	background-color: #82FF00;
+}
+
+.slide:nth-of-type(32) {
+	background-color: #75FF00;
+}
+
+.slide:nth-of-type(33) {
+	background-color: #68FF00;
+}
+
+.slide:nth-of-type(34) {
+	background-color: #5BFF00;
+}
+
+.slide:nth-of-type(35) {
+	background-color: #4EFF00;
+}
+
+/* ---- ENDE Heatmeter ---- */
+
+/* ---- Burgers Section ---- */
+section#burgers div.wrapper-inner>div {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	gap: 2rem;
+	height: 132rem;
+	justify-items: start;
+}
+
+.burger-item {
+	width: 30%;
+	margin: 1rem;
+}
+
+.burger-item h4 {
+	font-size: 1.4rem;
+	color: var(--col-main);
+	margin-top: 1rem;
+}
+
+/* ---- ENDE Burgers Section ---- */
+
+/* ---- Soups Salads Section ---- */
+section#soups-salads div.wrapper-inner>div {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto;
+	gap: 4rem;
+}
+
+section#soups-salads div.wrapper-inner>div>div h3 {
+	font-size: 1.85rem;
+	border-bottom: 2px solid var(--col-main);
+	padding-block: 1rem;
+}
+
+section#soups-salads div.wrapper-inner>div>div {
+	padding: 1rem;
+}
+
+section#soups-salads div.wrapper-inner>div>div>div h4 {
+	font-size: 1.4rem;
+	color: var(--col-main);
+	margin-top: 1rem;
+}
+
+/* ---- ENDE Soups Salads Section ---- */
+
+/* ---- Sides Desserts Section ---- */
+section#desserts div.wrapper-inner>div {
+	display: flex;
+	gap: 10rem;
+	padding: 1rem;
+}
+
+section#desserts div.wrapper-inner>div>div h4 {
+	font-size: 1.4rem;
+	color: var(--col-main);
+	margin-top: 1rem;
+}
+
+section#soups-salads {
+	background-color: var(--col-section);
+	border-top: 1px solid var(--col-font);
+	border-bottom: 1px solid var(--col-font);
+}
+
+section#sides div.wrapper-inner>div {
+	display: flex;
+	gap: 10rem;
+	padding: 1rem;
+}
+
+section#sides div.wrapper-inner div ul li {
+	margin-block: 0.5rem;
+}
+
+/* ---- ENDE Sides Desserts Section ---- */
+
+/* ---- Reservierung Section ---- */
+section#reserve div.wrapper-inner>p {
+	padding: 1rem;
+}
+
+#openMapBtn {
+	margin: 1rem;
+}
+
+section#reserve div.wrapper-inner>p {
+	padding: 1rem;
+}
+
+section#reserve {
+	background-color: var(--col-section);
+	border-top: 1px solid var(--col-font);
+	border-bottom: 1px solid var(--col-font);
+}
+
+/* ---- ENDE Reservierung Section ---- */
+
+/* ---- Anfahrt Kontakt Section ---- */
+section#locate>div>div>p {
+	font-size: 1.25rem;
+	padding: 1rem;
+}
+
+section#locate>div>div>iframe {
+	max-width: 20rem;
+	max-height: 12rem;
+	margin: 1rem;
+}
+
+section#locate>div>div {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+/* ---- ENDE Anfahrt Kontakt Section ---- */
+
+/* ---- Footer ---- */
+#footer {
+	background-color: var(--col-section);
+	border-top: 1px solid var(--col-font);
+}
+
+#footer>div.wrapper-inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 1rem;
+}
+
+#footer>div.wrapper-inner>ul {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#footer>div.wrapper-inner>ul li {
+	border-right: 2px solid var(--col-main);
+	margin-block: 1rem;
+}
+
+#footer>div.wrapper-inner>ul li:last-of-type {
+	border-right: none;
+}
+
+#footer>div.wrapper-inner>ul a {
+	color: var(--col-font);
+	text-transform: uppercase;
+	padding: 0 1rem;
+	transition: color ease 0.5s;
+}
+
+#footer>div.wrapper-inner>ul a:hover {
+	color: var(--col-main);
+}
+
+address {
+	font-style: normal;
+	font-weight: bold;
+	color: var(--col-font);
+	padding-inline: 1rem;
+}
+
+/* ---- ENDE Footer ---- */
+
+/* ---- Restaurant Map ---- */
+main section div form div {
+	display: none;
+
+}
+
+.map-visible {
+	display: grid;
+	grid-template-columns: 1fr 27rem;
+	grid-template-rows: repeat(8, 1fr);
+	grid-template-areas:
+		"date map"
+		"hour map"
+		"minute map"
+		"check map"
+		"name map"
+		"email map"
+		"phone map"
+		"submit map";
+	justify-items: center;
+	align-items: center;
+
+	position: fixed;
+	z-index: 600;
+	left: calc(50% - 30rem);
+	bottom: 5.5rem;
+	width: 60rem;
+	height: fit-content;
+	background: var(--col-section);
+	border: 1px solid var(--col-font);
+	border-radius: 0.25rem;
+	padding: 1rem;
+}
+
+#reservation-form>div#restaurantMap>div {
+	grid-area: map;
+	display: block;
+}
+
+#reservation-form>div#restaurantMap>div>img {
+	width: 27rem;
+	right: 3rem;
+}
+
+#reservation-form>div#restaurantMap>div button span {
+	display: none;
+}
+
+#reservation-form>div#restaurantMap>label:nth-of-type(1) {
+	grid-area: name;
+}
+
+#reservation-form>div#restaurantMap>label:nth-of-type(2) {
+	grid-area: email;
+}
+
+#reservation-form>div#restaurantMap>label:nth-of-type(3) {
+	grid-area: phone;
+}
+
+#reservation-form>div#restaurantMap>input[type="date"] {
+	grid-area: date;
+	padding: 0.25rem 1.8rem;
+	border: 2px solid var(--col-main);
+	border-radius: 0.25rem;
+	background-color: var(--col-bg);
+	color: var(--col-font);
+}
+
+#reservation-form>div#restaurantMap>select[name="resHour"] {
+	grid-area: hour;
+
+	padding: 0.25rem 2rem;
+	border: 2px solid var(--col-main);
+	border-radius: 0.25rem;
+	background-color: var(--col-bg);
+	color: var(--col-font);
+}
+
+#reservation-form>div#restaurantMap>select[name="resMinute"] {
+	grid-area: minute;
+
+	padding: 0.25rem 2rem;
+	border: 2px solid var(--col-main);
+	border-radius: 0.25rem;
+	background-color: var(--col-bg);
+	color: var(--col-font);
+}
+
+#reservation-form>div#restaurantMap>button[id="checkAvailabilityBtn"] {
+	grid-area: check;
+	font-size: 1rem;
+	padding-block: 0.25rem;
+}
+
+#reservation-form>div#restaurantMap>input[type="submit"] {
+	grid-area: submit;
+
+	font-size: 1.25rem;
+	color: var(--col-font);
+	font-weight: bold;
+	background-color: var(--col-main);
+	padding: 0.5rem 2rem;
+	border-radius: 0.25rem;
+	border: none;
+	cursor: pointer;
+}
+
+#reservation-form>div#restaurantMap>input[type="submit"]:hover {
+	box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+}
+
+#reservation-form>div#restaurantMap label input[name="name"],
+#reservation-form>div#restaurantMap label input[name="email"],
+#reservation-form>div#restaurantMap label input[name="phone"] {
+	padding: 0.25rem;
+	caret-color: var(--col-font);
+	border: 2px solid var(--col-main);
+	border-radius: 0.25rem;
+	background-color: var(--col-bg);
+	color: var(--col-font);
+}
+
+#reservation-form>div#restaurantMap label:nth-of-type(1) {
+	right: 1.55rem;
+}
+
+#reservation-form>div#restaurantMap label:nth-of-type(2) {
+	right: 1.6rem;
+}
+
+#reservation-form>div#restaurantMap label:nth-of-type(3) {
+	right: 1.85rem;
+}
+
+.table-button {
+	font-weight: bold;
+	color: #333;
+	width: 1.5rem;
+	height: 1.5rem;
+	border-radius: 100vw;
+	position: absolute;
+	z-index: 150;
+	border: none;
+	cursor: pointer;
+	background-color: #eee;
+}
+
+.table-button.red {
+	background-color: #FF2700;
+	cursor: initial;
+}
+
+.table-button.green {
+	color: #333;
+	background-color: #4EFF00;
+}
+
+.table-button.selected {
+	outline: 2px solid var(--col-main);
+	outline-offset: 2px;
+}
+
+#closeMapBtn {
+	width: 1.5rem;
+	height: 1.5rem;
+	position: absolute;
+	z-index: 500;
+	top: .5rem;
+	left: .5rem;
+	background: none;
+	border: none;
+	cursor: pointer;
+}
+
+#table1 {
+	left: 2.5rem;
+	top: 12.05rem;
+}
+
+#table2 {
+	left: 7.6rem;
+	top: 11.15rem;
+}
+
+#table3 {
+	left: 10.4rem;
+	top: 10.65rem;
+}
+
+#table4 {
+	left: 14.75rem;
+	top: 10rem;
+}
+
+#table5 {
+	left: 3.05rem;
+	top: 17.15rem;
+}
+
+#table6 {
+	left: 8.15rem;
+	top: 16.2rem;
+}
+
+#table7 {
+	left: 10.75rem;
+	top: 15.7rem;
+}
+
+#table8 {
+	left: 15.9rem;
+	top: 14.65rem;
+}
+
+/* ---- ENDE Restaurant Map ---- */

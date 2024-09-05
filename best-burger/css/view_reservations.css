@@ -1,0 +1,27 @@
+main {
+	top: 6rem;
+}
+a.logo small {
+	bottom: 0;
+}
+footer {
+	top: 6rem;
+}
+main table {
+	margin: auto;
+	margin-block: 2rem;
+}
+th, td {
+	padding: 0.5rem;
+	
+	border-right: 2px solid var(--col-main);
+}
+tr {
+	border-bottom: 2px solid var(--col-main);
+}
+tr:last-of-type {
+	border-bottom: none;
+}
+td:last-of-type, th:last-of-type {
+	border-right: none;
+}
