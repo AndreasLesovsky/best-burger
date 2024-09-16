@@ -1,12 +1,11 @@
-main {
-	top: 6rem;
+#reservations div.wrapper-inner {
+	display:block;
+	background-image: none;
 }
-a.logo small {
-	bottom: 0;
+#reservations div.wrapper-inner h2 {
+	margin-block: 1rem;
 }
-footer {
-	top: 6rem;
-}
+
 main table {
 	margin: auto;
 	margin-block: 2rem;
@@ -19,9 +18,46 @@ th, td {
 tr {
 	border-bottom: 2px solid var(--col-main);
 }
-tr:last-of-type {
-	border-bottom: none;
+thead tr:last-of-type {
+	background-color: var(--col-main);
 }
+thead tr:last-of-type td {
+	padding-block: 0.25rem;
+}
+
 td:last-of-type, th:last-of-type {
 	border-right: none;
+}
+button[type="submit"] {
+	background: none;
+	border: none;
+	cursor: pointer;
+}
+button[name="btnChangePage"] svg {
+	width: 1.25rem;
+	height: 1.25rem;
+	top: 0.25rem;
+}
+input[readonly] {
+	color: var(--col-font);
+	font-family: var(--font-std);
+	font-size: inherit;
+	border:none;
+	background:none;
+	max-width:3ch;
+	min-width:0px;
+}
+thead tr:last-of-type td input {
+	color: var(--col-font);
+	background-color: var(--col-bg);
+	border: 2px solid var(--col-font);
+	border-radius: 0.25rem;
+	padding: 0.5rem;
+	width: 100%;
+}
+
+button[name="btnOrderDate"] svg {
+	position: absolute;
+	right: 0;
+	top: -2.25rem;
 }

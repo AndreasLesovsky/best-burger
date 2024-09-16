@@ -1,5 +1,5 @@
 <?php
-define("TESTMODUS",true); //Konstante; gibt an, ob wir uns in einem Development-System (TESTMODUS ist true) oder in einem Produktivsystem (TESTMODUS ist false) befinden
+define("TESTMODUS",false); //Konstante; gibt an, ob wir uns in einem Development-System (TESTMODUS ist true) oder in einem Produktivsystem (TESTMODUS ist false) befinden
 
 define("DB",[
 	"host" => "localhost",

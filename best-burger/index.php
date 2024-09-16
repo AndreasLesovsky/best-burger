@@ -78,12 +78,12 @@ $conn->close();
 	<header>
 		<a href="#" class="logo">
 			<h1>
-				best burger<br>
-				<small>Premium Burger Restaurant</small>
+				best burger
 			</h1>
+			<small>Premium Burger Restaurant</small>
 		</a>
 
-		<nav id="primary-navigation">
+		<nav>
 			<ul>
 				<li><a href="#ueber-uns">Über Uns</a></li>
 				<li><a href="#burgers">Burgers</a></li>
@@ -98,7 +98,7 @@ $conn->close();
 			<li><a href="#" class="hvr-grow-rotate"><i class="fa-brands fa-instagram"></i></a></li>
 		</ul>
 
-		<button id="menu-btn" aria-expanded="false" aria-controls="primary-navigation">
+		<button id="menu-btn" aria-expanded="false">
 			<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px">
 				<path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
 			</svg>
@@ -125,19 +125,19 @@ $conn->close();
 			<div class="wrapper-inner">
 				<h2>The All-Stars</h2>
 				<div>
-					<div>
+					<div class="burger-card">
 						<img src="media/feature_greatone.png" alt="greatone">
 						<h4>The Great One</h4>
 						<p>Unsere zwei legendären Beef-Patties, doppelt Cheddar, doppelt Bacon, karamellisierte Zwiebeln, ein Spiegelei und hausgemachte Mayo, serviert zwischen zwei gegrillten Käse-Sandwiches... es gibt einen Grund, warum wir ihn "The Great One" nennen!
 						</p>
 					</div>
-					<div>
+					<div class="burger-card">
 						<img src="media/feature_cheeseburger.png" alt="cheeseburger">
 						<h4>Bacon Cheeseburger</h4>
 						<p>Ein Brezelbrötchen, beladen mit unserem legendären Beef-Patty, Cheddar-Käse, knusprigem Bacon, frischem Salat, Tomaten, roten Zwiebeln und hausgemachter Mayo.
 						</p>
 					</div>
-					<div>
+					<div class="burger-card">
 						<img src="media/feature_inferno.png" alt="inferno">
 						<h4>The Heat</h4>
 						<p>Unser legendäres Beef-Patty, verfeinert mit feuriger Inferno-Mayo, Jalapeño Jack Käse, würzigen Zwiebelringen, frischem Salat und Tomaten auf einem Pfefferbrötchen. Abgerundet mit einem mit Käse gefüllten Jalapeño.
@@ -150,7 +150,7 @@ $conn->close();
 
 		<section id="ueber-uns">
 			<div class="wrapper-inner">
-				<h2>Über boss burger</h2>
+				<h2>Über Uns</h2>
 				<div>
 					<p>
 						Willkommen bei best burger, dem Premium Burger Restaurant. Wir bieten Ihnen einzigartige Burger-Kreationen aus erstklassigem Beef, die auf unseren speziellen Flammengrillern zubereitet werden. Diese verleihen unseren Burgern einen unverwechselbaren, köstlichen Geschmack.<br>
@@ -501,7 +501,7 @@ $conn->close();
 						<h3>Suppen</h3>
 						<div>
 							<h4>Tagessuppe</h4>
-							<p>Fragen Sie Ihren Kellner, welches Suppe heute auf der Karte steht.</p>
+							<p>Fragen Sie Ihren Kellner, welche Suppe heute auf der Karte steht.</p>
 						</div>
 					</div>
 				</div>
@@ -528,24 +528,18 @@ $conn->close();
 		<section id="reserve">
 			<div class="wrapper-inner">
 				<h2>Reservieren</h2>
-				<?php echo ($msg); ?>
+				
 				<p>
 					Täglich von 11:00 bis 00:00 Uhr geöffnet!<br>
 					<br>
 					<br>
 					ACHTUNG, aufgrund der hohen Nachfrage:<br>
 					<br>
-					Bitte haben Sie Verständnis dafür dass wir pro Person nur eine Reservierung pro Woche entgegennehmen können.<br>
+					Wir bitten um Ihr Verständnis, dass jede Person nur einmal pro Woche reservieren kann.<br>
 					Beachten Sie bitte ausserdem dass die Reservierung nur in halbstündigen Blöcken möglich ist.
 				</p>
 				<form id="reservation-form" method="post">
-					<button type="button" id="openMapBtn" class="link-btn">Tischansicht öffnen</button>
 					<div id="restaurantMap">
-						<button type="button" id="closeMapBtn" title="Schließen">
-							<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="var(--col-font)">
-								<path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
-							</svg>
-						</button>
 						<input type="date" name="resTag" required>
 						<select name="resHour" required>
 							<option value="">Stunde wählen</option>
@@ -581,21 +575,13 @@ $conn->close();
 							<button type="button" id="table8" class="table-button"><span>Tisch </span>8</button>
 							<input type="hidden" id="selectedTable" name="selectedTable">
 						</div>
-						<label>
-							Name
-							<input type="text" name="name" required>
-						</label>
-						<label>
-							E-Mail
-							<input type="email" name="email" required>
-						</label>
-						<label>
-							Telefon
-							<input type="tel" name="phone" required>
-						</label>
+						<input type="text" name="name" placeholder="Name" required>
+						<input type="email" name="email" placeholder="E-Mail" required>
+						<input type="tel" name="phone" placeholder="Telefon" required>
 						<input type="submit" value="Reservieren!" class="hvr-push">
 					</div>
 				</form>
+				<?php echo ($msg); ?>
 			</div>
 		</section>
 
@@ -608,7 +594,7 @@ $conn->close();
 						Täglich von 11:00 - 00:00 Uhr
 					</p>
 					<p>
-						Muster-Weg 33<br>
+						Muster-Weg 17<br>
 						4020 Linz<br>
 						+43 123 123456
 					</p>
