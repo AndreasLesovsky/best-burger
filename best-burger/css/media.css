@@ -255,6 +255,12 @@
 		left: 0;
 		top: 0;
 	}
+
+
+	/* view_reservations.css */
+	table th:nth-of-type(1), table td:nth-of-type(1) {
+		display: none;
+	  }
 }
 
 /* max 64rem MD Ende */

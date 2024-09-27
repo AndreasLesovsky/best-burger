@@ -72,6 +72,28 @@ $conn->close();
 		integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
 		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script src="script.js"></script>
+	<script>
+        document.addEventListener("DOMContentLoaded", function() {
+            <?php if ($msg): ?>
+                // Scrollen zur Kommentar-Sektion
+                const commentsSection = document.getElementById("reserve");
+                if (commentsSection) {
+                    commentsSection.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            <?php endif; ?>
+        });
+    </script>
+	<script>
+        document.addEventListener('keydown', function(event) {
+            // Prüfen, ob Strg (oder Cmd) + Alt + A gedrückt wird
+            if ((event.ctrlKey || event.metaKey) && event.altKey && event.key === 'a') {
+                // Hier die URL zum Admin-Bereich einfügen
+                window.location.href = 'view_reservations.php';
+            }
+        });
+    </script>
 </head>
 
 <body>
