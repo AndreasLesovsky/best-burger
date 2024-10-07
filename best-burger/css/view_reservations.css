@@ -1,10 +1,10 @@
 /* Allgemeine Stile */
-#reservations div.wrapper-inner {
+#reservations div.inner-container {
 	display: block;
 	background-image: none;
 }
 
-#reservations div.wrapper-inner h2 {
+#reservations div.inner-container h2 {
 	margin-block: 1rem;
 	border-radius: 0.5rem;
 }

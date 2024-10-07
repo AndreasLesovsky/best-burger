@@ -16,7 +16,7 @@ section {
 	padding-block: 3rem;
 }
 
-.wrapper-inner {
+.inner-container {
 	max-width: 80rem;
 	margin: auto;
 }
@@ -32,6 +32,7 @@ h2 {
 }
 
 .link-btn {
+	display: inline-block;
 	font-size: 1.25rem;
 	color: var(--col-font);
 	font-weight: bold;
@@ -230,7 +231,7 @@ main section:first-of-type {
 	padding-bottom: 0;
 }
 
-main section:first-of-type div.wrapper-inner {
+main section:first-of-type div.inner-container {
 	text-wrap: balance;
 	display: grid;
 	grid-template-columns: 40% 1fr;
@@ -241,19 +242,19 @@ main section:first-of-type div.wrapper-inner {
 	background-repeat: no-repeat;
 }
 
-main section:first-of-type div.wrapper-inner h2 {
+main section:first-of-type div.inner-container h2 {
 	font-size: 2.75rem;
 	margin: 0;
 }
 
-main section:first-of-type div.wrapper-inner p {
+main section:first-of-type div.inner-container p {
 	font-size: 1.12rem;
 	font-weight: bold;
 	margin-block: 1rem;
 
 }
 
-main section:first-of-type>div.wrapper-inner>div.content>.link-btn {
+main section:first-of-type>div.inner-container>div.content>.link-btn {
 	top: 1rem;
 }
 
@@ -273,17 +274,17 @@ div.sticky-header-bar {
 /* ---- ENDE Hero Section ---- */
 
 /* Section Über Uns */
-section#ueber-uns div.wrapper-inner div {
+section#ueber-uns div.inner-container div {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: max-content;
 }
 
-section#ueber-uns div.wrapper-inner div p {
+section#ueber-uns div.inner-container div p {
 	padding: 1rem;
 }
 
-section#ueber-uns div.wrapper-inner div picture {
+section#ueber-uns div.inner-container div picture {
 	max-width: 25rem;
 	justify-self: end;
 	align-self: center;
@@ -299,53 +300,50 @@ section#ueber-uns {
 /* ENDE Section Über Uns */
 
 /* Section All Stars */
-section#all-stars div.wrapper-inner>div {
+section#all-stars div.inner-container>div {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: max-content;
 	gap: 2rem;
+	row-gap: 0;
 }
 
-section#all-stars div.wrapper-inner>div div {
+section#all-stars div.inner-container>div div {
 	text-align: start;
 	padding: 1rem;
 }
 
-section#all-stars div.wrapper-inner>div div>* {
+section#all-stars div.inner-container>div div>* {
 	margin-block: 0.5rem;
 }
 
-section#all-stars div.wrapper-inner>div div h4 {
+section#all-stars div.inner-container>div div h4 {
 	font-size: 2rem;
 	grid-area: burger-title;
 }
-section#all-stars div.wrapper-inner>div div p {
-	text-align: justify;
+section#all-stars div.inner-container>div div p {
 	grid-area: burger-desc;
 }
 
-section#all-stars div.wrapper-inner>div div img {
+section#all-stars div.inner-container>div div img {
 	border-bottom: 5px solid var(--col-section);
 }
 
-section#all-stars div.wrapper-inner {
+section#all-stars div.inner-container {
 	text-align: center;
 }
 
-section#all-stars div.wrapper-inner div div.burger-card img {
+section#all-stars div.inner-container div div.burger-card img {
 	grid-area: burger-img;
 }
-section#all-stars div.wrapper-inner div div.burger-card img:nth-of-type(3) {
-	height: 253px;
-}
 
-section#all-stars div.wrapper-inner h2 {
+section#all-stars div.inner-container h2 {
 	text-align: start;
 }
 .burger-card {
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: 17.5rem 4rem auto;
+	grid-template-rows: auto auto auto;
 	grid-template-areas: 
 		"burger-img"
 		"burger-title"
@@ -365,7 +363,7 @@ section:nth-of-type(5) {
 	border-bottom: 1px solid var(--col-font);
 }
 
-section#wings div.wrapper-inner:first-of-type {
+section#wings div.inner-container:first-of-type {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 	grid-template-rows: max-content;
@@ -373,49 +371,49 @@ section#wings div.wrapper-inner:first-of-type {
 		"wings wings sauces1 sauces2 rubs";
 }
 
-section#wings div.wrapper-inner:first-of-type>div:nth-of-type(2),
-section#wings div.wrapper-inner:first-of-type>div:nth-of-type(3),
-section#wings div.wrapper-inner:first-of-type>div:nth-of-type(4) {
+section#wings div.inner-container:first-of-type>div:nth-of-type(2),
+section#wings div.inner-container:first-of-type>div:nth-of-type(3),
+section#wings div.inner-container:first-of-type>div:nth-of-type(4) {
 	padding: 1rem;
 }
 
-section#wings div.wrapper-inner:first-of-type>div:nth-of-type(2),
-section#wings div.wrapper-inner:first-of-type>div:nth-of-type(4) {
+section#wings div.inner-container:first-of-type>div:nth-of-type(2),
+section#wings div.inner-container:first-of-type>div:nth-of-type(4) {
 	padding-top: 1.5rem;
 }
 
-section#wings div.wrapper-inner:first-of-type ul {
+section#wings div.inner-container:first-of-type ul {
 	padding-top: 1.75rem;
 }
 
-section#wings div.wrapper-inner:first-of-type ul li:hover {
+section#wings div.inner-container:first-of-type ul li:hover {
 	cursor: pointer;
 	color: var(--col-main);
 }
 
-section#wings div.wrapper-inner:first-of-type>div:nth-of-type(1) {
+section#wings div.inner-container:first-of-type>div:nth-of-type(1) {
 	grid-area: wings;
 	padding-right: 10rem;
 }
 
-section#wings div.wrapper-inner:first-of-type>div:nth-of-type(2) {
+section#wings div.inner-container:first-of-type>div:nth-of-type(2) {
 	grid-area: sauces1;
 }
 
-section#wings div.wrapper-inner:first-of-type>div:nth-of-type(3) {
+section#wings div.inner-container:first-of-type>div:nth-of-type(3) {
 	grid-area: sauces2;
 	padding-top: 4.5rem;
 }
 
-section#wings div.wrapper-inner:first-of-type>div:nth-of-type(4) {
+section#wings div.inner-container:first-of-type>div:nth-of-type(4) {
 	grid-area: rubs;
 }
 
-section#wings div.wrapper-inner:first-of-type>div:nth-of-type(1) p {
+section#wings div.inner-container:first-of-type>div:nth-of-type(1) p {
 	margin: 1rem;
 }
 
-section#wings div.wrapper-inner:first-of-type h3 {
+section#wings div.inner-container:first-of-type h3 {
 	font-size: 2rem;
 }
 
@@ -626,18 +624,18 @@ div#heatmeter h2 span {
 /* ---- ENDE Heatmeter ---- */
 
 /* ---- Burgers Section ---- */
-section#burgers div.wrapper-inner>div {
+section#burgers div.inner-container>div {
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
-	gap: 2rem;
+	gap: 1.5rem;
 	height: 152.5rem;
 	justify-items: start;
+	padding-inline: 1rem;
 }
 
 .burger-item {
 	width: 30%;
-	margin: 1rem;
 }
 
 .burger-item h4 {
@@ -649,24 +647,24 @@ section#burgers div.wrapper-inner>div {
 /* ---- ENDE Burgers Section ---- */
 
 /* ---- Soups Salads Section ---- */
-section#soups-salads div.wrapper-inner>div {
+section#soups-salads div.inner-container>div {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: auto;
 	gap: 4rem;
 }
 
-section#soups-salads div.wrapper-inner>div>div h3 {
+section#soups-salads div.inner-container>div>div h3 {
 	font-size: 1.85rem;
 	border-bottom: 2px solid var(--col-main);
 	padding-block: 1rem;
 }
 
-section#soups-salads div.wrapper-inner>div>div {
+section#soups-salads div.inner-container>div>div {
 	padding: 1rem;
 }
 
-section#soups-salads div.wrapper-inner>div>div>div h4 {
+section#soups-salads div.inner-container>div>div>div h4 {
 	font-size: 1.4rem;
 	color: var(--col-main);
 	margin-top: 1rem;
@@ -675,13 +673,13 @@ section#soups-salads div.wrapper-inner>div>div>div h4 {
 /* ---- ENDE Soups Salads Section ---- */
 
 /* ---- Sides Desserts Section ---- */
-section#desserts div.wrapper-inner>div {
+section#desserts div.inner-container>div {
 	display: flex;
 	gap: 10rem;
 	padding: 1rem;
 }
 
-section#desserts div.wrapper-inner>div>div h4 {
+section#desserts div.inner-container>div>div h4 {
 	font-size: 1.4rem;
 	color: var(--col-main);
 	margin-top: 1rem;
@@ -693,20 +691,20 @@ section#soups-salads {
 	border-bottom: 1px solid var(--col-font);
 }
 
-section#sides div.wrapper-inner>div {
+section#sides div.inner-container>div {
 	display: flex;
 	gap: 10rem;
 	padding: 1rem;
 }
 
-section#sides div.wrapper-inner div ul li {
+section#sides div.inner-container div ul li {
 	margin-block: 0.5rem;
 }
 
 /* ---- ENDE Sides Desserts Section ---- */
 
 /* ---- Reservierung Section ---- */
-section#reserve div.wrapper-inner>p {
+section#reserve div.inner-container>p {
 	padding: 1rem;
 }
 
@@ -714,7 +712,7 @@ section#reserve div.wrapper-inner>p {
 	margin: 1rem;
 }
 
-section#reserve div.wrapper-inner>p {
+section#reserve div.inner-container>p {
 	padding: 1rem;
 }
 
@@ -752,7 +750,7 @@ section#locate>div>div {
 	border-top: 1px solid var(--col-font);
 }
 
-#footer>div.wrapper-inner {
+#footer>div.inner-container {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -760,31 +758,31 @@ section#locate>div>div {
 	padding-inline: 1rem;
 }
 
-#footer>div.wrapper-inner>ul {
+#footer>div.inner-container>ul {
 	display: flex;
 	flex-wrap: wrap;
 }
 
-#footer>div.wrapper-inner>ul li {
+#footer>div.inner-container>ul li {
 	border-right: 2px solid var(--col-main);
 	margin-block: 1rem;
 }
 
-#footer>div.wrapper-inner>ul li:last-of-type {
+#footer>div.inner-container>ul li:last-of-type {
 	border-right: none;
 }
-#footer>div.wrapper-inner>ul:last-of-type li {
+#footer>div.inner-container>ul:last-of-type li {
 	border-right: none;
 }
 
-#footer>div.wrapper-inner>ul:first-of-type a {
+#footer>div.inner-container>ul:first-of-type a {
 	color: var(--col-font);
 	text-transform: uppercase;
 	padding: 0 1rem;
 	transition: color ease 0.5s;
 }
 
-#footer>div.wrapper-inner>ul a:hover {
+#footer>div.inner-container>ul a:hover {
 	color: var(--col-main);
 }
 

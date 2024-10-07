@@ -11,7 +11,7 @@
 		padding-inline: 3rem;
 	}
 
-	section#burgers div.wrapper-inner>div {
+	section#burgers div.inner-container>div {
 		height: 153rem;
 	}
 }
@@ -94,7 +94,7 @@
 	}
 
 	/* Hero */
-	main section:first-of-type div.wrapper-inner {
+	main section:first-of-type div.inner-container {
 		text-align: center;
 		grid-template-columns: 1fr;
 		grid-template-rows: 30rem 1fr;
@@ -115,27 +115,27 @@
 		background-repeat: no-repeat;
 	}
 
-	main section:first-of-type div.wrapper-inner h2 {
+	main section:first-of-type div.inner-container h2 {
 		font-size: 3rem;
 		margin: 0 0 1rem;
 	}
 
-	main section:first-of-type div.wrapper-inner p {
+	main section:first-of-type div.inner-container p {
 		font-size: 1.12rem;
 		text-wrap: balance;
 	}
 
 	/* Section All Stars */
-	section#all-stars div.wrapper-inner>div {
+	section#all-stars div.inner-container>div {
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: max-content max-content;
 	}
 
-	section#all-stars div.wrapper-inner>div>div:last-of-type {
+	section#all-stars div.inner-container>div>div:last-of-type {
 		left: calc(50% + 1rem);
 	}
 
-	section#all-stars div.wrapper-inner>div div img {
+	section#all-stars div.inner-container>div div img {
 		max-width: 100%;
 		height: auto;
 		max-height: initial;
@@ -143,7 +143,7 @@
 	}
 
 	/* Wings Section */
-	section#wings div.wrapper-inner {
+	section#wings div.inner-container {
 		grid-template-columns: 1fr 1fr 1fr;
 		grid-template-rows: max-content max-content;
 		grid-template-areas:
@@ -151,7 +151,7 @@
 			"sauces1 sauces2 rubs";
 	}
 
-	section#wings div.wrapper-inner:first-of-type>div:nth-of-type(1) {
+	section#wings div.inner-container:first-of-type>div:nth-of-type(1) {
 		padding-right: 1rem;
 	}
 
@@ -161,7 +161,7 @@
 	}
 
 	/* Burgers Section */
-	section#burgers div.wrapper-inner>div {
+	section#burgers div.inner-container>div {
 		flex-wrap: nowrap;
 		height: auto;
 	}
@@ -268,37 +268,37 @@
 /* max 48rem SM */
 @media screen and (max-width:48rem) {
 	h2 {
-		font-size: 2rem;
+		font-size: 2.5rem;
 	}
 	
-	main section:first-of-type div.wrapper-inner h2 {
+	main section:first-of-type div.inner-container h2 {
 		font-size: 2rem;
 	}
 	/* Section All Stars */
-	section#all-stars div.wrapper-inner>div {
+	section#all-stars div.inner-container>div {
 		grid-template-columns: 1fr;
 		row-gap: 0;
 		grid-template-rows: max-content max-content max-content;
 		margin-bottom: 2rem;
 	}
 
-	section#all-stars div.wrapper-inner>div>div:last-of-type {
+	section#all-stars div.inner-container>div>div:last-of-type {
 		left: 0;
 	}
 
 	/* Section Über Uns */
-	section#ueber-uns div.wrapper-inner div {
+	section#ueber-uns div.inner-container div {
 		grid-template-columns: 1fr;
 		grid-template-rows: auto auto;
 	}
 
-	section#ueber-uns div.wrapper-inner div picture {
+	section#ueber-uns div.inner-container div picture {
 		max-width: 30rem;
 		justify-self: center;
 	}
 
 	/* Wings Section */
-	section#wings div.wrapper-inner:first-of-type {
+	section#wings div.inner-container:first-of-type {
 		grid-template-columns: 1fr;
 		grid-template-rows: max-content max-content max-content max-content;
 		grid-template-areas:
@@ -308,12 +308,12 @@
 			"rubs";
 	}
 
-	section#wings div.wrapper-inner:first-of-type>div:nth-of-type(3) {
+	section#wings div.inner-container:first-of-type>div:nth-of-type(3) {
 		padding-top: 0;
 	}
 
 	/* Burgers Section */
-	section#burgers div.wrapper-inner>div {
+	section#burgers div.inner-container>div {
 		flex-wrap: nowrap;
 		height: auto;
 	}
@@ -338,7 +338,7 @@
 	}
 
 	/* Soups Salads Section */
-	section#soups-salads div.wrapper-inner>div {
+	section#soups-salads div.inner-container>div {
 		display: grid;
 		grid-template-columns: 1fr;
 		grid-template-rows: auto auto;
@@ -346,7 +346,7 @@
 	}
 
 	/* Desserts Section*/
-	section#desserts div.wrapper-inner>div {
+	section#desserts div.inner-container>div {
 		display: flex;
 		flex-direction: column;
 		gap: 2rem;
@@ -359,6 +359,9 @@
 
 /* max 36rem XS */
 @media screen and (max-width:36rem) {
+	h2 {
+		font-size: 2rem;
+	}
 	section {
 		padding-inline: 1.5rem;
 	}
@@ -370,7 +373,7 @@
 		background-position: center;
 		background-repeat: no-repeat;
 	}
-	main section:first-of-type div.wrapper-inner {
+	main section:first-of-type div.inner-container {
 		text-align: center;
 		grid-template-columns: 1fr;
 		grid-template-rows: 17rem 1fr;
@@ -411,7 +414,7 @@
 
 /* max 25rem XXS */
 @media screen and (max-width:25rem) {
-	main section:first-of-type div.wrapper-inner h2 {
+	main section:first-of-type div.inner-container h2 {
 		font-size: 1.85rem;
 	}
 	main section:first-of-type {
