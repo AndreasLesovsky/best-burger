@@ -152,7 +152,7 @@ foreach ($sortColumns as $key => $column) {
 
     <main>
         <section id="reservations">
-            <div class="wrapper-inner">
+            <div class="inner-container">
                 <h2>Reservierungen</h2>
 
                 <?php echo $msg; ?>
@@ -306,7 +306,7 @@ foreach ($sortColumns as $key => $column) {
     </main>
 
     <footer id="footer">
-        <div class="wrapper-inner">
+        <div class="inner-container">
             <ul>
                 <li><a href="#">Catering</a></li>
                 <li><a href="#">Jobs</a></li>

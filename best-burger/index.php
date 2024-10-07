@@ -129,7 +129,7 @@ $conn->close();
 
 	<main>
 		<section>
-			<div class="wrapper-inner">
+			<div class="inner-container">
 				<div class="content">
 					<h2>Die besten Burger vom Grill!</h2>
 					<p>
@@ -144,25 +144,25 @@ $conn->close();
 		<div class="sticky-header-bar"></div>
 
 		<section id="all-stars">
-			<div class="wrapper-inner">
+			<div class="inner-container">
 				<h2>The All-Stars</h2>
 				<div>
 					<div class="burger-card">
 						<img src="media/feature_greatone.png" alt="greatone">
 						<h4>The Great One</h4>
-						<p>Unsere zwei legendären Beef-Patties, doppelt Cheddar, doppelt Bacon, karamellisierte Zwiebeln, ein Spiegelei und hausgemachte Mayo, serviert zwischen zwei gegrillten Käse-Sandwiches... es gibt einen Grund, warum wir ihn "The Great One" nennen!
+						<p>Zwei unserer legendären Beef-Patties, doppelt Cheddar, doppelt Bacon, karamellisierte Zwiebeln, ein Spiegelei und hausgemachte Mayo, serviert in einem Dinkel-Sesam Bun... es gibt einen Grund, warum wir ihn "The Great One" nennen!
 						</p>
 					</div>
 					<div class="burger-card">
 						<img src="media/feature_cheeseburger.png" alt="cheeseburger">
-						<h4>Bacon Cheeseburger</h4>
-						<p>Ein Brezelbrötchen, beladen mit unserem legendären Beef-Patty, Cheddar-Käse, knusprigem Bacon, frischem Salat, Tomaten, roten Zwiebeln und hausgemachter Mayo.
+						<h4>Heavy Hitter Cheeseburger</h4>
+						<p>Ein extra großes Beef-Patty, beladen mit amerikanischem, Schweizer, Cheddar und Mozzarella-Käse, Gewürzgurken, grünem Relish, Mayonnaise und Senf auf einem Brioche-Brötchen.
 						</p>
 					</div>
 					<div class="burger-card">
 						<img src="media/feature_inferno.png" alt="inferno">
-						<h4>The Heat</h4>
-						<p>Unser legendäres Beef-Patty, verfeinert mit feuriger Inferno-Mayo, Jalapeño Jack Käse, würzigen Zwiebelringen, frischem Salat und Tomaten auf einem Pfefferbrötchen. Abgerundet mit einem mit Käse gefüllten Jalapeño.
+						<h4>Mushroom “Swiss Miss” Burger</h4>
+						<p>Unser legendäres Beef-Patty, belegt mit hausgemachter sautierter Champignon-Soße, Emmentaler, knusprigen Zwiebelringen und Mayonnaise auf einem Zwiebelbrötchen.
 						</p>
 					</div>
 				</div>
@@ -171,7 +171,7 @@ $conn->close();
 		</section>
 
 		<section id="ueber-uns">
-			<div class="wrapper-inner">
+			<div class="inner-container">
 				<h2>Über Uns</h2>
 				<div>
 					<p>
@@ -193,7 +193,7 @@ $conn->close();
 		</section>
 
 		<section id="burgers">
-			<div class="wrapper-inner">
+			<div class="inner-container">
 				<h2>Burgers</h2>
 				<div>
 					<div class="burger-item">
@@ -234,7 +234,7 @@ $conn->close();
 					</div>
 					<div class="burger-item">
 						<h4>Heavy Hitter Cheeseburger</h4>
-						<p>Kein gewöhnlicher Cheeseburger! Zwei legendäre Beef-Patties, beladen mit amerikanischem, Schweizer, Cheddar und Mozzarella-Käse, Gewürzgurken, grünem Relish, Mayonnaise und Senf auf einem Brioche-Brötchen.</p>
+						<p>Kein gewöhnlicher Cheeseburger! Ein extra großes Beef-Patty, beladen mit amerikanischem, Schweizer, Cheddar und Mozzarella-Käse, Gewürzgurken, grünem Relish, Mayonnaise und Senf auf einem Brioche-Brötchen.</p>
 					</div>
 					<div class="burger-item">
 						<h4>Buffalo Chicken Burger</h4>
@@ -246,7 +246,7 @@ $conn->close();
 					</div>
 					<div class="burger-item">
 						<h4>The Great One</h4>
-						<p>Zwei unserer legendären Beef-Patties, doppelt Cheddar, doppelt Bacon, karamellisierte Zwiebeln, ein Spiegelei und hausgemachte Mayo, serviert zwischen zwei gegrillten Käse-Sandwiches... es gibt einen Grund, warum wir ihn "The Great One" nennen!</p>
+						<p>Zwei unserer legendären Beef-Patties, doppelt Cheddar, doppelt Bacon, karamellisierte Zwiebeln, ein Spiegelei und hausgemachte Mayo, serviert in einem Dinkel-Sesam Bun... es gibt einen Grund, warum wir ihn "The Great One" nennen!</p>
 					</div>
 					<div class="burger-item">
 						<h4>Falafel</h4>
@@ -273,7 +273,7 @@ $conn->close();
 		</section>
 
 		<section id="wings">
-			<div class="wrapper-inner">
+			<div class="inner-container">
 				<div>
 					<h2>Wings</h2>
 					<p>
@@ -332,7 +332,7 @@ $conn->close();
 				</div>
 			</div>
 
-			<div id="heatmeter" class="wrapper-inner">
+			<div id="heatmeter" class="inner-container">
 				<h2>Heatmeter <span>Hältst du es aus?</span></h2>
 				<div id="heatmeter-holder">
 					<div class="heat slide">
@@ -476,7 +476,7 @@ $conn->close();
 		</section>
 
 		<section id="sides">
-			<div class="wrapper-inner">
+			<div class="inner-container">
 				<h2>Fries & Sides</h2>
 				<div>
 					<ul>
@@ -493,7 +493,7 @@ $conn->close();
 		</section>
 
 		<section id="soups-salads">
-			<div class="wrapper-inner">
+			<div class="inner-container">
 				<h2>Suppen & Salate</h2>
 				<div>
 					<div>
@@ -531,7 +531,7 @@ $conn->close();
 		</section>
 
 		<section id="desserts">
-			<div class="wrapper-inner">
+			<div class="inner-container">
 				<h2>Nachspeisen</h2>
 				<div>
 					<div>
@@ -548,7 +548,7 @@ $conn->close();
 		</section>
 
 		<section id="reserve">
-			<div class="wrapper-inner">
+			<div class="inner-container">
 				<h2>Reservieren</h2>
 				
 				<p>
@@ -608,7 +608,7 @@ $conn->close();
 		</section>
 
 		<section id="locate">
-			<div class="wrapper-inner">
+			<div class="inner-container">
 				<h2>Anfahrt & Kontakt</h2>
 				<div>
 					<p>
@@ -627,7 +627,7 @@ $conn->close();
 	</main>
 
 	<footer id="footer">
-		<div class="wrapper-inner">
+		<div class="inner-container">
 			<ul>
 				<li><a href="#">Catering</a></li>
 				<li><a href="#">Jobs</a></li>
@@ -638,7 +638,7 @@ $conn->close();
 				<li><a href="#" class="hvr-grow-rotate"><i class="fa-brands fa-instagram"></i></a></li>
 			</ul>
 			<address>
-				©2024 AL
+				©2024 best burger
 			</address>
 		</div>
 	</footer>
